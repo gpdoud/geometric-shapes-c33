@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace geometric_shapes_c33
 {
-	class Sqr
+	class Sqr : Rect
 	{
-		public int Side1 { get; set; }
-
-		public int Perimeter()
+		public Sqr(int Sides) : base(Sides, Sides)
 		{
-			return 4 * Side1;
-		}
-		public int Area()
-		{
-			return Side1 * Side1;
 		}
 	}
 }
